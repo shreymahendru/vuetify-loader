@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.0 (2024-08-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* Requires node >18
+* Removed `styles: 'expose'` option
+
+### Features
+
+* add auto-loading to webpack plugin ([59f1b1f](https://github.com/shreymahendru/vuetify-loader/commit/59f1b1f6f805cdab9cacd0372b394df3dafb4698))
+* add autoImport ignore option ([#323](https://github.com/shreymahendru/vuetify-loader/issues/323)) ([1328d49](https://github.com/shreymahendru/vuetify-loader/commit/1328d492abcf4612f336b6ad1d014f1ed250793c))
+* add esm build ([34a03c1](https://github.com/shreymahendru/vuetify-loader/commit/34a03c152e04e16694ca43c255a08edf3a2bd382)), closes [#319](https://github.com/shreymahendru/vuetify-loader/issues/319)
+* add styles.configFile option ([9142e9d](https://github.com/shreymahendru/vuetify-loader/commit/9142e9d644ba1e4f86486440c29a318704090636)), closes [#263](https://github.com/shreymahendru/vuetify-loader/issues/263) [#245](https://github.com/shreymahendru/vuetify-loader/issues/245) [#221](https://github.com/shreymahendru/vuetify-loader/issues/221)
+* add stylesTimeout option ([93e830d](https://github.com/shreymahendru/vuetify-loader/commit/93e830dd728610bfa83c5a93f85fcca6acb4f59d))
+* add transformAssetUrls ([c2e525b](https://github.com/shreymahendru/vuetify-loader/commit/c2e525b3a3ad5582ffc50216a94c47b94f1c8fc9)), closes [#237](https://github.com/shreymahendru/vuetify-loader/issues/237)
+* allow labs auto-import ([55ead16](https://github.com/shreymahendru/vuetify-loader/commit/55ead1692cd857a15e7595d14e97766c57651f0b)), closes [#315](https://github.com/shreymahendru/vuetify-loader/issues/315)
+* implement autoImport plugin ([163ff7f](https://github.com/shreymahendru/vuetify-loader/commit/163ff7f25c2e8cb65bc6461f4399b52e53b77612))
+* remove `styles: 'expose'` ([c43dc80](https://github.com/shreymahendru/vuetify-loader/commit/c43dc804811bf22be920ac72a38e7b4c193bca3b))
+* rename packages ([c64493d](https://github.com/shreymahendru/vuetify-loader/commit/c64493d2d9d68338b23d302a3467c1058cd055f1)), closes [#236](https://github.com/shreymahendru/vuetify-loader/issues/236)
+* support "[@use](https://github.com/use) 'vuetify'" ([e578193](https://github.com/shreymahendru/vuetify-loader/commit/e578193a685dd581f6f15ff6e5e99f1a6eebbf1c))
+* support external templates ([8b7fc70](https://github.com/shreymahendru/vuetify-loader/commit/8b7fc7082cf177e122d83b97ec0521092c044a77)), closes [#215](https://github.com/shreymahendru/vuetify-loader/issues/215)
+* support HMR ([39baa9d](https://github.com/shreymahendru/vuetify-loader/commit/39baa9dd70a52656af8f7508a1e095a468483d19))
+* support meta.load-css() ([29039f3](https://github.com/shreymahendru/vuetify-loader/commit/29039f37eca66c8c46744fd87c6d181af9e9d64b))
+* support vuetify beta.4 ([f1a0976](https://github.com/shreymahendru/vuetify-loader/commit/f1a09765e568c7ee5481dd576765939ffc1fe534))
+* **styles:** add sass option ([ddd68d9](https://github.com/shreymahendru/vuetify-loader/commit/ddd68d99aedaa0088c5d89740d1a9b9c1bb74808))
+
+
+### Bug Fixes
+
+* add explicit vue peer dependency ([6634db3](https://github.com/shreymahendru/vuetify-loader/commit/6634db3218dcc706db1c5c9e90f338ce76e9fff3)), closes [#292](https://github.com/shreymahendru/vuetify-loader/issues/292)
+* add leading slash to absolute paths on windows ([3ecd8e2](https://github.com/shreymahendru/vuetify-loader/commit/3ecd8e2d8034137ca47ad8325df960dfb0efc08e)), closes [#274](https://github.com/shreymahendru/vuetify-loader/issues/274)
+* add plugin order warning ([1957398](https://github.com/shreymahendru/vuetify-loader/commit/1957398cd199bfde3bf1debb4f3abd6e474b0389))
+* add vue and upath to dependencies ([ac5af82](https://github.com/shreymahendru/vuetify-loader/commit/ac5af823f1bfd8bc79dc3eb353eed64adef34421)), closes [#242](https://github.com/shreymahendru/vuetify-loader/issues/242)
+* allow vite 3 ([a64f0c1](https://github.com/shreymahendru/vuetify-loader/commit/a64f0c15ba71dbd5a323091328be50f70133724a)), closes [#256](https://github.com/shreymahendru/vuetify-loader/issues/256)
+* always use posix paths ([7393eef](https://github.com/shreymahendru/vuetify-loader/commit/7393eefbb6a8a79de3b265c335ab5d238d4fe95e))
+* cache importers invalidation on Windows ([#255](https://github.com/shreymahendru/vuetify-loader/issues/255)) ([ab0c22d](https://github.com/shreymahendru/vuetify-loader/commit/ab0c22d1fb5d560686b8533e825290a413178b7c))
+* correct cjs types export ([4512234](https://github.com/shreymahendru/vuetify-loader/commit/4512234a1192895d59db8180fa949597f2894025)), closes [#327](https://github.com/shreymahendru/vuetify-loader/issues/327)
+* disable esModuleInterop ([b3ae4d1](https://github.com/shreymahendru/vuetify-loader/commit/b3ae4d17e4319ab1b8c550d50b0cc2737a8d0719)), closes [#222](https://github.com/shreymahendru/vuetify-loader/issues/222)
+* don't parse file paths as urls ([50c2dc0](https://github.com/shreymahendru/vuetify-loader/commit/50c2dc0e1a739039763e32c591dcd68981f99f18)), closes [#324](https://github.com/shreymahendru/vuetify-loader/issues/324)
+* ignore non-standard query parameters ([183f9dc](https://github.com/shreymahendru/vuetify-loader/commit/183f9dcc4db15afe9f5f4c46624301696c097750)), closes [#271](https://github.com/shreymahendru/vuetify-loader/issues/271)
+* ignore non-url ids ([774f264](https://github.com/shreymahendru/vuetify-loader/commit/774f264e22b8df6933fbcff1f51a4e4b50a1cb2d))
+* load virtual requests with `?v=` query string ([#252](https://github.com/shreymahendru/vuetify-loader/issues/252)) ([21bca2f](https://github.com/shreymahendru/vuetify-loader/commit/21bca2f3c658168c371e850a8b6b1acc9757a0cf))
+* normalise windows paths ([706913d](https://github.com/shreymahendru/vuetify-loader/commit/706913da0a865643019db9b2ee627c0400d9cbaa)), closes [#205](https://github.com/shreymahendru/vuetify-loader/issues/205)
+* passthrough sourcemaps ([dfdc815](https://github.com/shreymahendru/vuetify-loader/commit/dfdc815ad175df9ffd8be5c4847d8fe29e442f39)), closes [#233](https://github.com/shreymahendru/vuetify-loader/issues/233)
+* resolve absolute style imports ([199a5bf](https://github.com/shreymahendru/vuetify-loader/commit/199a5bf6fd75dc5f1be21a88ca300bf403eac397)), closes [#206](https://github.com/shreymahendru/vuetify-loader/issues/206)
+* resolve stylesheets when using configFile with optimizeDeps.exclude ([79f51cf](https://github.com/shreymahendru/vuetify-loader/commit/79f51cff6907fce85f83d252baf70b91238e4b9c)), closes [#268](https://github.com/shreymahendru/vuetify-loader/issues/268)
+* resolve vuetify relative to cwd ([9bf71d4](https://github.com/shreymahendru/vuetify-loader/commit/9bf71d4fd8596cf8333e3041f4307a851c7aba6a)), closes [#248](https://github.com/shreymahendru/vuetify-loader/issues/248)
+* respect vue's include and exclude options ([557713a](https://github.com/shreymahendru/vuetify-loader/commit/557713aa2c32bfdf2a6465d8a5c6eeabe0613491))
+* skip certain files in pendingModules, timeout per file ([1543182](https://github.com/shreymahendru/vuetify-loader/commit/15431824d3c7ee0bf6314822476c57d1be0448ee)), closes [#249](https://github.com/shreymahendru/vuetify-loader/issues/249)
+* support more import paths ([4253e7b](https://github.com/shreymahendru/vuetify-loader/commit/4253e7b7224393adae8a5bccec650d70fb8a9cde))
+* support node 12 ([9ddf99b](https://github.com/shreymahendru/vuetify-loader/commit/9ddf99b3a3222d86cf9dc5b8a7561bc0131d6832)), closes [#212](https://github.com/shreymahendru/vuetify-loader/issues/212)
+* support node 18 ([9683bf5](https://github.com/shreymahendru/vuetify-loader/commit/9683bf54ad3b26a6553574a1be6a6c3c95fc3afd)), closes [#325](https://github.com/shreymahendru/vuetify-loader/issues/325)
+* support production mode ([1cfaf2e](https://github.com/shreymahendru/vuetify-loader/commit/1cfaf2efb64b8b65c54c1948a00bd81508db9a13)), closes [#213](https://github.com/shreymahendru/vuetify-loader/issues/213)
+* support vite 3.1 ([51f13de](https://github.com/shreymahendru/vuetify-loader/commit/51f13de891f1cdc329b3014067f8dfa7e77d85a3)), closes [#267](https://github.com/shreymahendru/vuetify-loader/issues/267)
+* support vite 4 ([b7d6661](https://github.com/shreymahendru/vuetify-loader/commit/b7d6661a8b6fe3b87c95a3c5e3961cc6cb2e661d)), closes [#279](https://github.com/shreymahendru/vuetify-loader/issues/279)
+* transform imports in script setup lang="ts" ([322f6ba](https://github.com/shreymahendru/vuetify-loader/commit/322f6ba511c0da4ffbb90e49bd7d467d993b8ac6))
+* trigger HMR when adding new style imports ([ad1637b](https://github.com/shreymahendru/vuetify-loader/commit/ad1637b516a6d873927098f973d339710092582b)), closes [#196](https://github.com/shreymahendru/vuetify-loader/issues/196)
+* update style import regexp ([a6b5e26](https://github.com/shreymahendru/vuetify-loader/commit/a6b5e269225c4a0577b30f59b208629d30fc934f))
+* use default export ([c5e01f5](https://github.com/shreymahendru/vuetify-loader/commit/c5e01f5b0b1f018800be9b4e1a0cd2501a6f2a57)), closes [#227](https://github.com/shreymahendru/vuetify-loader/issues/227)
+* use find-cache-dir, normalise dos paths ([990ee15](https://github.com/shreymahendru/vuetify-loader/commit/990ee15ae49f331ff2d59b5cf00829ac32eb4ecd)), closes [#202](https://github.com/shreymahendru/vuetify-loader/issues/202)
+* wait for all other modules to resolve before writing styles ([274ce9c](https://github.com/shreymahendru/vuetify-loader/commit/274ce9ced8da65107b7544f9cdb2d82d463be313)), closes [#225](https://github.com/shreymahendru/vuetify-loader/issues/225)
+
+
+
 ### [2.0.6](https://github.com/shreymahendru/vuetify-loader/compare/vite-plugin-vuetify@2.0.5...vite-plugin-vuetify@2.0.6) (2024-08-09)
 
 **Note:** Version bump only for package vite-plugin-vuetify

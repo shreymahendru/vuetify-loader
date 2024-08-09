@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-n-app-vuetify",
-  "version": "2.0.6",
+  "version": "3.0.0",
   "description": "A Vite plugin for treeshaking Vuetify components and more",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
