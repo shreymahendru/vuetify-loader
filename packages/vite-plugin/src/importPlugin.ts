@@ -37,7 +37,8 @@ export function importPlugin (options: Options): Plugin {
         (query.type === 'script' && query.setup === 'true')
       )
 
-      if (isVueFile || isVueTemplate) {
+      const isCompiledTemplate = id.endsWith("-view.html") || id.endsWith("-view.html.js");
+      if (isVueFile || isVueTemplate || isCompiledTemplate) {
         const { code: imports, source } = generateImports(code, options)
         return {
           code: source + imports,
