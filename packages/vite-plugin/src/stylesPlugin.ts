@@ -1,8 +1,8 @@
 import path from 'upath'
-import { resolveVuetifyBase, normalizePath, isObject } from '@vuetify/n-app-loader-shared'
+import { resolveVuetifyBase, normalizePath, isObject } from '@shreymahendru/n-app-loader-shared'
 
 import type { Plugin } from 'vite'
-import type { Options } from '@vuetify/n-app-loader-shared'
+import type { Options } from '@shreymahendru/n-app-loader-shared'
 
 function isSubdir (root: string, test: string) {
   const relative = path.relative(root, test)

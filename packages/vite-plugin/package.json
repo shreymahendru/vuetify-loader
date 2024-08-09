@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-n-app-vuetify",
+  "name": "@shreymahendru/vite-plugin-n-app-vuetify",
   "version": "3.0.3",
   "description": "A Vite plugin for treeshaking Vuetify components and more",
   "main": "./dist/index.cjs",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin",
   "dependencies": {
-    "@vuetify/n-app-loader-shared": "^4.0.0",
+    "@shreymahendru/n-app-loader-shared": "^4.0.0",
     "debug": "^4.3.3",
     "upath": "^2.0.1"
   },
@@ -44,5 +44,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "9c74720ba3789cd415e3b4c67319b2794bc4b8cf"
+  "gitHead": "50f80a8a2ec9d6956d99c1a90b75e1e699cb5570"
 }

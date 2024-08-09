@@ -3285,6 +3285,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@shreymahendru/n-app-loader-shared@npm:^4.0.0, @shreymahendru/n-app-loader-shared@workspace:packages/shared":
+  version: 0.0.0-use.local
+  resolution: "@shreymahendru/n-app-loader-shared@workspace:packages/shared"
+  dependencies:
+    upath: "npm:^2.0.1"
+  peerDependencies:
+    vue: ^3.0.0
+    vuetify: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@shreymahendru/vite-plugin-n-app-vuetify@workspace:packages/vite-plugin":
+  version: 0.0.0-use.local
+  resolution: "@shreymahendru/vite-plugin-n-app-vuetify@workspace:packages/vite-plugin"
+  dependencies:
+    "@shreymahendru/n-app-loader-shared": "npm:^4.0.0"
+    debug: "npm:^4.3.3"
+    upath: "npm:^2.0.1"
+  peerDependencies:
+    vite: ">=5"
+    vue: ^3.0.0
+    vuetify: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
 "@trysound/sax@npm:0.2.0":
   version: 0.2.0
   resolution: "@trysound/sax@npm:0.2.0"
@@ -3941,17 +3966,6 @@ __metadata:
     vue-loader: "npm:^16.5.0"
     vuetify: "npm:^3.4.6"
     webpack: "npm:^5.89.0"
-  languageName: unknown
-  linkType: soft
-
-"@vuetify/n-app-loader-shared@npm:^3.0.2, @vuetify/n-app-loader-shared@workspace:packages/shared":
-  version: 0.0.0-use.local
-  resolution: "@vuetify/n-app-loader-shared@workspace:packages/shared"
-  dependencies:
-    upath: "npm:^2.0.1"
-  peerDependencies:
-    vue: ^3.0.0
-    vuetify: ^3.0.0
   languageName: unknown
   linkType: soft
 
@@ -15180,20 +15194,6 @@ __metadata:
   checksum: b44c80a9a9b7677529e8674fdeaf4a9c052e2237cfb749d558898a487f481ac7d797ed2067eca93a5da8ade50bae9c289919c5aefdb26a4b5ceccc75b24b78a3
   languageName: node
   linkType: hard
-
-"vite-plugin-n-app-vuetify@workspace:packages/vite-plugin":
-  version: 0.0.0-use.local
-  resolution: "vite-plugin-n-app-vuetify@workspace:packages/vite-plugin"
-  dependencies:
-    "@vuetify/n-app-loader-shared": "npm:^3.0.2"
-    debug: "npm:^4.3.3"
-    upath: "npm:^2.0.1"
-  peerDependencies:
-    vite: ">=5"
-    vue: ^3.0.0
-    vuetify: ^3.0.0
-  languageName: unknown
-  linkType: soft
 
 "vite-plugin-vuetify@npm:2.0.1":
   version: 2.0.1
