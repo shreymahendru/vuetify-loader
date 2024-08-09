@@ -1,5 +1,5 @@
 import { Plugin } from 'vite'
-import { Options, isObject, includes, transformAssetUrls } from '@vuetify/loader-shared'
+import { Options, isObject, includes, transformAssetUrls } from '@vuetify/n-app-loader-shared'
 
 import { importPlugin } from './importPlugin'
 import { stylesPlugin } from './stylesPlugin'
@@ -23,4 +23,4 @@ export default function vuetify (_options: Options = {}): Plugin[] {
 }
 vuetify.transformAssetUrls = transformAssetUrls
 
-export { transformAssetUrls } from '@vuetify/loader-shared'
+export { transformAssetUrls } from "@vuetify/n-app-loader-shared"

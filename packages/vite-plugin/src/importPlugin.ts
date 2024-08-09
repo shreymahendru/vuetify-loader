@@ -1,6 +1,6 @@
 import { extname } from 'path'
 import { Plugin, createFilter } from 'vite'
-import { generateImports, Options } from '@vuetify/loader-shared'
+import { generateImports, Options } from '@vuetify/n-app-loader-shared'
 import { URLSearchParams } from 'url'
 
 function parseId (id: string) {

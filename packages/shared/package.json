@@ -1,5 +1,5 @@
 {
-  "name": "@vuetify/loader-shared",
+  "name": "@vuetify/n-app-loader-shared",
   "version": "3.0.2",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -37,5 +37,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "d2f05fc25f8b690d5e5e86596d996bd88f8aa816"
+  "gitHead": "9c74720ba3789cd415e3b4c67319b2794bc4b8cf"
 }

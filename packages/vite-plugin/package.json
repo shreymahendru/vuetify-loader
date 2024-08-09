@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin",
   "dependencies": {
-    "@vuetify/loader-shared": "^3.0.2",
+    "@vuetify/n-app-loader-shared": "^3.0.2",
     "debug": "^4.3.3",
     "upath": "^2.0.1"
   },
@@ -44,5 +44,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "d2f05fc25f8b690d5e5e86596d996bd88f8aa816"
+  "gitHead": "9c74720ba3789cd415e3b4c67319b2794bc4b8cf"
 }
