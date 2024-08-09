@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuetifyjs/vuetify-loader.git"
+    "url": "git+https://github.com/shreymahendru/vuetify-loader.git"
   },
   "scripts": {
     "build": "unbuild",
@@ -36,5 +36,6 @@
   ],
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "d2f05fc25f8b690d5e5e86596d996bd88f8aa816"
 }
