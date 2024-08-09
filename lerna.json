@@ -16,7 +16,7 @@
       "message": "chore: release"
     },
     "version": {
-      "push": false
+      "push": true
     }
   }
 }
